@@ -13,36 +13,5 @@
     "jade": "~1.11.0",
     "morgan": "~1.9.1",
     "pg-promise": "^10.10.2"
-  },
-  "eslintConfig": {
-    "extends": "airbnb-base",
-    "env": {
-      "es6": true,
-      "browser": true
-    },
-    "rules": {
-      "brace-style": [
-        "error",
-        "stroustrup"
-      ],
-      "comma-dangle": [
-        "error",
-        "never"
-      ],
-      "no-unused-vars": [
-        "warn"
-      ],
-      "no-var": [
-        "off"
-      ],
-      "one-var": [
-        "off"
-      ]
-    }
-  },
-  "devDependencies": {
-    "eslint": "^7.28.0",
-    "eslint-config-airbnb-base": "^14.2.1",
-    "eslint-plugin-import": "^2.23.4"
   }
 }
