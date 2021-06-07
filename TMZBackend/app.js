@@ -1,6 +1,7 @@
 const createError = require("http-errors");
 const express = require("express");
 const path = require("path");
+const cors = require("cors");
 const cookieParser = require("cookie-parser");
 const logger = require("morgan");
 
@@ -13,6 +14,8 @@ const port = 8080;
 
 // our app
 const app = express();
+
+app.use(cors());
 
 // view engine setup
 app.set("views", path.join(__dirname, "views"));
