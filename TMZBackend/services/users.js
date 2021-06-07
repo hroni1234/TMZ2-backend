@@ -1,5 +1,5 @@
 const userValidation = require('../validation/userValidation');
 
-exports.validate = (username,password)=>{
-    console.log()
+exports.validate = async (username,password)=>{
+    return await userValidation.validate(username,password);
 }

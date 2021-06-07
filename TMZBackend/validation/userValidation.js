@@ -1,7 +1,8 @@
 const db = require("../db/db");
+const dbVariables = require("../dbVariablesPod.json");
 
-exports.validate = (username,password) => {
-  return db.many(
-    `SELECT * FROM ${USERS_SCHEMA}.${USERS_TABLE} WHERE username='${username}' AND password='${password}'`
+exports.validate = async (username,password) => {
+  return await db.one(
+    `SELECT * FROM ${dbVariables.USERS_SCHEMA}.${dbVariables.USERS_TABLE} WHERE username='${username}' AND pwd='${password}'`
   );
 };

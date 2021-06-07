@@ -1,0 +1,10 @@
+{
+  "DB": "postgres",
+  "DB_USERNAME": "tmzusers",
+  "DB_PASSWORD": "users123",
+  "USERS_DB": "usersdb",
+  "DB_HOST": "170.30.85.235",
+  "DB_PORT": 5432,
+  "USERS_SCHEMA": "usersdev",
+  "USERS_TABLE": "users"
+}
