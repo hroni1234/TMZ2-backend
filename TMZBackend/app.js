@@ -9,6 +9,7 @@ const logger = require("morgan");
 const indexRouter = require("./routes/index");
 const usersRouter = require("./routes/users");
 const intelligenceRouter = require("./routes/intelligence");
+const securityRouter = require("./routes/security");
 
 const port = 8080;
 
@@ -30,6 +31,8 @@ app.use(express.static(path.join(__dirname, "public")));
 app.use("/", indexRouter);
 app.use("/users", usersRouter);
 app.use("/intelligence", intelligenceRouter);
+app.use("/security", securityRouter);
+
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
