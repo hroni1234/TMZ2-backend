@@ -1,6 +1,6 @@
 const api = require("../api");
 const securityBaseUrl =
-  "19.0.0.4:30000/2";
+  "19.0.0.4:30000";
 
   const weatherDates = async () =>
   await api.getData(`${securityBaseUrl}/weatherDates`);
