@@ -10,6 +10,8 @@ const indexRouter = require("./routes/index");
 const usersRouter = require("./routes/users");
 const intelligenceRouter = require("./routes/intelligence");
 const securityRouter = require("./routes/security");
+const weatherRouter = require("./routes/weather");
+
 
 const port = 8080;
 
@@ -32,6 +34,8 @@ app.use("/", indexRouter);
 app.use("/users", usersRouter);
 app.use("/intelligence", intelligenceRouter);
 app.use("/security", securityRouter);
+app.use("/weather", weatherRouter);
+
 
 
 // catch 404 and forward to error handler
