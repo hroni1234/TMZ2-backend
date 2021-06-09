@@ -4,6 +4,7 @@ let weatherData = {};
 
 router.post("/", (req, res) => {
   weatherData = req.body;
+  res.send(req.statusCode);
   console.log(weatherData + "post");
 });
 
