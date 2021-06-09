@@ -5,12 +5,18 @@ let weatherData = {};
 router.post("/", (req, res) => {
   weatherData = req.body;
   res.send(req.statusCode);
-  console.log(weatherData + "post");
 });
 
 router.get("", (req, res) => {
-res.send(weatherData);
-console.log(weatherData + "get");
+  res.send(weatherData);
+});
+
+router.get("/dates", (req, res) => {
+  res.send(weatherData.dates);
+});
+
+router.get("/weather", (req, res) => {
+  res.send(weatherData.temp);
 });
 
 module.exports = router;
