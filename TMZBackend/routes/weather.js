@@ -1,15 +1,13 @@
 const express = require("express");
 const router = express.Router();
-const weatherService = require("../services/weatherService");
-const badRequestCode = 400;
+let weatherData = {};
 
-const sendFromPromise = (promise, res, errCode) =>
-  promise
-    .then(response => res.send(response))
-    .catch(err => res.status(errCode).send(err));
+router.post("", (req, res) => {
+  weatherData = req.body;
+});
 
-router.get("/weatherDates", (req, res) =>
-  sendFromPromise(weatherService.weatherDates(), res, badRequestCode)
-);
+router.get("", (req, res) => {
+res.send(weatherData);
+});
 
 module.exports = router;

@@ -1,7 +1,7 @@
-const weatherModel = require("../models/weatherModel");
+// const weatherModel = require("../models/weatherModel");
 
-const weatherDates = async ()  => await weatherModel.weatherDates();
+// const weatherDates = async ()  => await weatherModel.weatherDates();
 
-module.exports = {
-    weatherDates
-};
+// module.exports = {
+//     weatherDates
+// };
