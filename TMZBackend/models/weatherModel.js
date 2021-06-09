@@ -3,7 +3,7 @@ const securityBaseUrl =
   "http://tmz-2-backend-git-tmzapp2.apps.openforce.openforce.biz";
 
   const weatherDates = async () =>
-  await api.getData(`/weatherDates`);
+  await api.getData(`${securityBaseUrl}/weatherDates`);
 
 module.exports = {
     weatherDates
