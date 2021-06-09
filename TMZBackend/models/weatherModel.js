@@ -1,9 +1,9 @@
 const api = require("../api");
 const securityBaseUrl =
-  "19.0.0.4:30000";
+  "http://tmz-2-backend-git-tmzapp2.apps.openforce.openforce.biz";
 
   const weatherDates = async () =>
-  await api.getData(`${securityBaseUrl}/weatherDates`);
+  await api.getData(`/weatherDates`);
 
 module.exports = {
     weatherDates
