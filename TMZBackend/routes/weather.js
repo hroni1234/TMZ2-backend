@@ -2,7 +2,7 @@ const express = require("express");
 const router = express.Router();
 let weatherData = {};
 
-router.post("", (req, res) => {
+router.post("/", (req, res) => {
   weatherData = req.body;
   console.log(weatherData + "post");
 });
